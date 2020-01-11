@@ -8,8 +8,14 @@ resource "aws_instance" "web" {
 
   tags = {
     Name = "My Instance"
-  }
+   }
 }
+output "instance_id" {
+ # description = "List of IDs of instances"
+  value       = "aws_instance.web.id"
+}
+
+
 
 
 
