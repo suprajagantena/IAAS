@@ -12,8 +12,9 @@ resource "aws_instance" "web" {
 }
 output "instance_id" {
  # description = "List of IDs of instances"
-  value       = "aws_instance.web.id"
+  value  =  aws_instance.web.id
 }
+
 
 
 
