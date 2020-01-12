@@ -7,7 +7,7 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
   key_name      = "jenkinskeypair"
  # iam_role      = "jenkins"
-  role          = "jenkins"
+ # role          = "jenkins"
 
   tags = {
     Name = "My Instance"
