@@ -16,7 +16,7 @@ cd springboot
 git clone https://github.com/suprajagantena/jenkins_dsl.git
 cd jenkins_dsl/SpringProjectforCICD-master/
 mvn clean package;
-java -jar target\ebstack-0.0.1-SNAPSHOT.jar;
+java -jar \target\ebstack-0.0.1-SNAPSHOT.jar;
 #8085;
 
 #check the src/main/resources/application.properties;
