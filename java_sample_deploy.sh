@@ -14,6 +14,7 @@ sudo yum install -y git
 mkdir springboot
 cd springboot
 git clone https://github.com/suprajagantena/jenkins_dsl.git
+cd jenkins_dsl/SpringProjectforCICD-master/
 mvn clean package;
 java -jar ebstack-0.0.1-SNAPSHOT.jar;
 #8085;
