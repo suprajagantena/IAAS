@@ -9,3 +9,9 @@ if mvn -version | grep -q "Apache Maven" ; then
 else
   sudo yum install -y maven
 fi
+
+
+sudo yum install -y git
+mkdir springboot
+cd springboot
+git clone https://github.com/suprajagantena/jenkins_dsl.git
