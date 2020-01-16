@@ -15,6 +15,7 @@ mkdir springboot
 cd springboot
 git clone https://github.com/suprajagantena/jenkins_dsl.git
 cd jenkins_dsl/SpringProjectforCICD-master/
+kill -9 $(ps -aux | grep "ebstack-0.0.1-SNAPSHOT.jar" | grep -v grep | awk '{print $2}')
 mvn clean package;
 java -jar /home/ec2-user/springboot/jenkins_dsl/SpringProjectforCICD-master/target/ebstack-0.0.1-SNAPSHOT.jar;
 #8085;
